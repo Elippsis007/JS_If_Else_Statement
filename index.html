@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaring Variables</title>
+</head>
+<body>
+    <script>
+        // Created 2 variables and assigned values to both
+        var score = 17000;
+        var highscore = 15000;
+
+        // Created function called "checkScore"
+        function checkScore()
+        {
+            if(score > highscore)
+            {
+                highscore = score; // This line should return "True" and execute the block. 
+                document.getElementById("output").innerHTML = "You have the new high score. Congratulations!";
+            } else
+            {
+                // If the above line was to return "False" and this line "True" then it would check this block and execute the below string.
+                document.getElementById("output").innerHTML = "Your score isn't the high score. Try again"
+            }
+        }
+
+    </script>
+    <p id="output"></p>
+    <button onclick="checkScore()">Check Score</button>
+</body>
+</html>
